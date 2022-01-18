@@ -18,10 +18,7 @@ namespace Task3
         {
             public static bool AskForBonus(Post worker, int hours)
             {
-                object position = Enum.Parse(typeof(Post), worker.ToString());
-                Post post = (Post)position;
-
-                if (hours > (int)post)
+                if (hours > (int)worker)
                     return true;
                 else
                     return false;
